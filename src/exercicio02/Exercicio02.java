@@ -28,6 +28,11 @@ public class Exercicio02 {
 
     private static double calculaOrcamentoAnual(List<Funcionario> funcionarios) {
         // TODO: implemente o código deste método
-        return 0.0;
+        //return 0.0;
+        float total = 0;
+        for(int i=0; i<funcionarios.size(); i++) {
+            total = total + funcionarios.get(i);
+        }
+        return total;
     }
 }

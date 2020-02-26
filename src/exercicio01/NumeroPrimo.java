@@ -1,6 +1,7 @@
 package exercicio01;
 
-import java.util.Set;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.TreeSet;
 
 public class NumeroPrimo {
@@ -18,9 +19,17 @@ public class NumeroPrimo {
      * @param numeros Conjunto de inteiros
      * @return Set<Integer>
      */
-    public Set<Integer> getNumerosPrimosDe(Set<Integer> numeros) {
+    public List<Integer> getNumerosPrimosDe(List<Integer> numeros) {
         // TODO: implemente o código deste método
-        return null;
+        //return null;
+        List<Integer> lista = new ArrayList();
+        for(int i=0; i<numeros.size(); i++) {
+            for(int j=0; j<numeros.size(); j++) {
+                if(numeros.get(i)%j != 0) {
+                    lista.add(numeros.get(i));
+                }
+            }
+        }
+        return lista;
     }
-
 }
